@@ -1,6 +1,4 @@
 ## 功能介绍
-根据[之前公司](http://www.iqegg.com)的产品需求，参考 [barcodescanner](https://github.com/dm77/barcodescanner) 改的，希望能帮助到有生成二维码、扫描二维码、识别图片二维码等需求的猿友。修改幅度较大，也就没准备针对 [barcodescanner](https://github.com/dm77/barcodescanner) 库提交PR。
-
 - [x] 可定制各式各样的扫描框
 - [x] 可定制全屏扫描或只识别扫描框区域内码
 - [x] 可定制要识别的码的格式（详细用法查看 TestScanActivity 中的 onClick 方法）
