@@ -40,11 +40,7 @@
 
 在自己项目里集成时记得在 onDestroy 方法中调用 mQRCodeView.onDestroy()，在 onStop 方法中调用 mQRCodeView.stopCamera()，否则会出现黑屏。如果没执行前面提到的这两个方法出现黑屏的话，那你就只能加上前面提到的两个方法后，重启手机后重新运行了
 
-#### 3.Gradle 依赖时提示找不到cn.bingoogolapple:bga-libraryname:「latestVersion」
-
-[ ![Download](https://api.bintray.com/packages/bingoogolapple/maven/bga-qrcode-core/images/download.svg) ](https://bintray.com/bingoogolapple/maven/bga-qrcode-core/_latestVersion)「latestVersion」指的是左边这个 Download 徽章后面的「数字」，请自行替换。***请不要再来问我「latestVersion」是什么了***
-
-## 效果图与示例 apk
+## 效果图
 
 ![zbar109](https://cloud.githubusercontent.com/assets/8949716/17475203/5d788730-5d8c-11e6-836a-61e885e05453.gif)
 ![zxingbarcode109](https://cloud.githubusercontent.com/assets/8949716/17475222/76339bd4-5d8c-11e6-934f-96db6917f69b.gif)
