@@ -14,7 +14,7 @@ export default class App extends Component<Props> {
   componentWillMount(): void {
 
   }
-  isEmpty(prams){
+  _isEmpty(prams){
     if(prams===null||prams===""||prams===undefined){
       return true;
     }else{
@@ -24,9 +24,13 @@ export default class App extends Component<Props> {
   //扫描
   _scanner=()=>{
     NativeModules.NaviModule.startActivityByClassName('com.rnerweimascanner.ScannerActivity').then(result=>{
-      Alert.alert(result);
+      if(this._isEmpty(result)){
+        alert('请选择二维码进行扫描');
+        return;
+      }
+      alert(result);
     }).catch(error=>{
-      Alert.alert(error);
+       alert(error);
     });
   }
 
