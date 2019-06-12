@@ -1,16 +1,3 @@
-:running:BGAQRCode-Android:running: [ ![Download](https://api.bintray.com/packages/bingoogolapple/maven/bga-qrcode-core/images/download.svg) ](https://bintray.com/bingoogolapple/maven/bga-qrcode-core/_latestVersion)
-============
-
-## 目录
-* [功能介绍](#功能介绍)
-* [常见问题](#常见问题)
-* [效果图与示例 apk](#效果图与示例-apk)
-* [Gradle 依赖](#gradle-依赖)
-* [布局文件](#布局文件)
-* [自定义属性说明](#自定义属性说明)
-* [接口说明](#接口说明)
-* [关于我](#关于我)
-
 ## 功能介绍
 根据[之前公司](http://www.iqegg.com)的产品需求，参考 [barcodescanner](https://github.com/dm77/barcodescanner) 改的，希望能帮助到有生成二维码、扫描二维码、识别图片二维码等需求的猿友。修改幅度较大，也就没准备针对 [barcodescanner](https://github.com/dm77/barcodescanner) 库提交PR。
 
@@ -47,47 +34,6 @@
 ![zxingdecode109](https://cloud.githubusercontent.com/assets/8949716/17475235/8c03b2be-5d8c-11e6-931d-a50942a8ab75.gif)
 ![zxingqrcode109](https://cloud.githubusercontent.com/assets/8949716/17475249/a551cc06-5d8c-11e6-85dc-4e2e07051cae.gif)
 ![iqegg](https://cloud.githubusercontent.com/assets/8949716/17475267/bd9c0a60-5d8c-11e6-8487-c732306debe2.gif)
-## Gradle 依赖
-[ ![Download](https://api.bintray.com/packages/bingoogolapple/maven/bga-qrcode-core/images/download.svg) ](https://bintray.com/bingoogolapple/maven/bga-qrcode-core/_latestVersion)「latestVersion」指的是左边这个 Download 徽章后面的「数字」，请自行替换。***请不要再来问我「latestVersion」是什么了***
-
-```
-## 布局文件
->ZXing
-
-```xml
-<cn.bingoogolapple.qrcode.zxing.ZXingView
-    android:id="@+id/zxingview"
-    style="@style/MatchMatch"
-    app:qrcv_animTime="1000"
-    app:qrcv_borderColor="@android:color/white"
-    app:qrcv_borderSize="1dp"
-    app:qrcv_cornerColor="@color/colorPrimaryDark"
-    app:qrcv_cornerLength="20dp"
-    app:qrcv_cornerSize="3dp"
-    app:qrcv_maskColor="#33FFFFFF"
-    app:qrcv_rectWidth="200dp"
-    app:qrcv_scanLineColor="@color/colorPrimaryDark"
-    app:qrcv_scanLineSize="1dp"
-    app:qrcv_topOffset="90dp" />
-```
->ZBar
-
-```xml
-<cn.bingoogolapple.qrcode.zbar.ZBarView
-    android:id="@+id/zbarview"
-    style="@style/MatchMatch"
-    app:qrcv_animTime="1000"
-    app:qrcv_borderColor="@android:color/white"
-    app:qrcv_borderSize="1dp"
-    app:qrcv_cornerColor="@color/colorPrimaryDark"
-    app:qrcv_cornerLength="20dp"
-    app:qrcv_cornerSize="3dp"
-    app:qrcv_isShowDefaultScanLineDrawable="true"
-    app:qrcv_maskColor="#33FFFFFF"
-    app:qrcv_rectWidth="200dp"
-    app:qrcv_scanLineColor="@color/colorPrimaryDark"
-    app:qrcv_topOffset="90dp" />
-```
 
 ## 自定义属性说明
 
