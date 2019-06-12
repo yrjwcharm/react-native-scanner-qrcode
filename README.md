@@ -51,25 +51,9 @@
 ![zxingdecode109](https://cloud.githubusercontent.com/assets/8949716/17475235/8c03b2be-5d8c-11e6-931d-a50942a8ab75.gif)
 ![zxingqrcode109](https://cloud.githubusercontent.com/assets/8949716/17475249/a551cc06-5d8c-11e6-85dc-4e2e07051cae.gif)
 ![iqegg](https://cloud.githubusercontent.com/assets/8949716/17475267/bd9c0a60-5d8c-11e6-8487-c732306debe2.gif)
-[图片]
-[图片]
-[图片]
 ## Gradle 依赖
 [ ![Download](https://api.bintray.com/packages/bingoogolapple/maven/bga-qrcode-core/images/download.svg) ](https://bintray.com/bingoogolapple/maven/bga-qrcode-core/_latestVersion)「latestVersion」指的是左边这个 Download 徽章后面的「数字」，请自行替换。***请不要再来问我「latestVersion」是什么了***
 
->ZXing
-
-```groovy
-dependencies {
-    implementation 'cn.bingoogolapple:bga-qrcode-zxing:latestVersion'
-}
-```
->ZBar
-
-```groovy
-dependencies {
-    implementation 'cn.bingoogolapple:bga-qrcode-zbar:latestVersion'
-}
 ```
 ## 布局文件
 >ZXing
@@ -323,40 +307,3 @@ public static Bitmap syncEncodeQRCode(String content, int size, int foregroundCo
  */
 public static Bitmap syncEncodeBarcode(String content, int width, int height, int textSize)
 ```
-
-#### 详细用法请查看[ZBarDemo](https://github.com/bingoogolapple/BGAQRCode-Android/tree/master/zbardemo):feet:
-
-#### 详细用法请查看[ZXingDemo](https://github.com/bingoogolapple/BGAQRCode-Android/tree/master/zxingdemo):feet:
-
-## 关于我
-
-| 个人主页 | 邮箱 | BGA系列开源库QQ群
-| ------------- | ------------ | ------------ |
-| <a  href="http://www.bingoogolapple.cn" target="_blank">bingoogolapple.cn</a>  | <a href="mailto:bingoogolapple@gmail.com" target="_blank">bingoogolapple@gmail.com</a> | ![BGA_CODE_CLUB](http://bgashare.bingoogolapple.cn/BGA_CODE_CLUB.png?imageView2/2/w/200) |
-
-## 打赏支持
-
-如果您觉得 BGA 系列开源库帮你节省了大量的开发时间，请扫描下方的二维码随意打赏，要是能打赏个 10.24 :monkey_face:就太:thumbsup:了。您的支持将鼓励我继续创作:octocat:
-
-如果您目前正打算购买通往墙外的梯子，可以使用我的邀请码「YFQ9Q3B」购买 [Lantern](https://github.com/getlantern/forum)，双方都赠送三个月的专业版使用时间:beers:
-
-<p align="center">
-  <img src="http://bgashare.bingoogolapple.cn/bga_pay.png?imageView2/2/w/450" width="450">
-</p>
-
-## License
-
-    Copyright (C) 2012 The Android Open Source Project
-    Copyright 2014 bingoogolapple
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
