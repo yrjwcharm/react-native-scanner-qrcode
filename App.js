@@ -25,12 +25,12 @@ export default class App extends Component<Props> {
   _scanner=()=>{
     NativeModules.NaviModule.startActivityByClassName('com.rnerweimascanner.ScannerActivity').then(result=>{
       if(this._isEmpty(result)){
-        alert('请选择二维码进行扫描');
+        Alert.alert('请选择二维码进行扫描');
         return;
       }
-      alert(result);
+      Alert.alert(result);
     }).catch(error=>{
-       alert(error);
+       Alert.alert(error);
     });
   }
 
