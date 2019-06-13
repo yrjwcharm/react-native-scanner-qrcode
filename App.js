@@ -33,7 +33,6 @@ export default class App extends Component<Props> {
        Alert.alert(error);
     });
   }
-
   render() {
     return (
       <View style={styles.container}>
